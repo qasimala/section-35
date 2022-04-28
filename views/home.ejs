@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h2>Get form</h2>
+    <form action="/tacos">
+        <label for="flavor">Flavor
+            <input type="text" id="flavor" name="flavor">
+        </label>
+        <br>
+        <label for="qty">
+            Quantity
+            <input type="text" id="qty" name="qty">
+        </label>
+        <button>Submit</button>
+    </form>
+    <h2>Post form</h2>
+    <form action="/tacos" method="post">
+        <label for="flavor">Flavor
+            <input type="text" id="flavor" name="flavor">
+        </label>
+        <br>
+        <label for="qty">
+            Quantity
+            <input type="text" id="qty" name="qty">
+        </label>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

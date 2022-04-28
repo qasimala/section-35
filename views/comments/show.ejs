@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Comment ID: <%= requestedId %>  </title>
+</head>
+<body>
+    <h1>Comment ID: <%= requestedId.id %> </h1>
+    <h2>Comment: <%= requestedId.comment %> </h2>
+    <h3>Username: <%= requestedId.username %> </h3>
+
+    <a href="/comments/index">Go To All Comments</a>
+    <br>
+    <a href="/comments/<%= requestedId.id %>/edit ">Edit Comment</a>
+    <br>
+    <form method="post" action="/comments/<%= requestedId.id %>?_method=DELETE">
+        <button>Delete Comment</button>
+    </form>
+</body>
+</html>
